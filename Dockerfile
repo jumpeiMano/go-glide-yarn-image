@@ -3,6 +3,7 @@ FROM golang:1.11
 RUN curl https://glide.sh/get | sh
 RUN curl -sL https://deb.nodesource.com/setup_8.x | bash -
 RUN apt-get update
+RUN apt-get install -y python
 RUN apt-get install -y nodejs
 RUN npm rebuild node-sass --force
 RUN curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | apt-key add - && \
