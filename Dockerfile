@@ -1,7 +1,7 @@
 FROM golang:1.11
 
 RUN curl https://glide.sh/get | sh
-RUN curl -sL https://deb.nodesource.com/setup_8.x | bash -
+RUN curl -sL https://deb.nodesource.com/setup_10.x | bash -
 RUN apt-get update
 RUN apt-get install -y build-essential
 RUN apt-get install -y nodejs
