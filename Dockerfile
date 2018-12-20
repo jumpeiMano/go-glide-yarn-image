@@ -1,4 +1,4 @@
-FROM golang:1.11
+FROM golang:1.11.4
 
 RUN curl https://glide.sh/get | sh
 RUN curl -sL https://deb.nodesource.com/setup_10.x | bash -
